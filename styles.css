@@ -1,0 +1,249 @@
+/* Ensure the navbar is fixed and spans full width */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px; /* Add some padding for better spacing */
+}
+
+/* Ensure navbar items are centered on large screens */
+@media (min-width: 992px) {
+    .navbar-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Center the nav links */
+    }
+}
+
+/* Ensure proper layout when minimized */
+@media (max-width: 991px) {
+    .navbar .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        order: 2;
+        margin-left: auto; /* Move the toggle button to the right */
+    }
+
+    .navbar-brand {
+        order: 1;
+    }
+
+    .collapse.navbar-collapse {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+}
+
+/* Reduce logo size */
+.logo {
+    height: 50px; /* Adjust to desired height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+
+.header-class {
+text-align: center;
+margin-bottom: 80px;
+margin-top: 80px;
+}
+
+.text-class{
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.container{
+    text-align: center;
+}
+
+
+.h2-header{
+    margin-bottom: 80px;
+}
+
+/* .card-img-top{
+    width: 100%;
+    height: 15rem;
+} */
+
+/* .carousel-item {
+    width:1500px;
+    height:665px;
+    margin-bottom: 5rem;
+  } */
+
+
+  .btn-lg{
+    /* margin-bottom: 80px; */
+    background-color:rgb(244, 215, 145);
+    border-color:rgb(255, 255, 255) ;
+}
+
+.btn {
+    background-color:rgb(244, 215, 145);
+    border-color:rgb(255, 255, 255) ;
+color: black;
+    
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: inherit !important;
+    border-color: inherit !important;
+    color: inherit !important; 
+    box-shadow: none !important; /* Removes Bootstrap's hover shadow */
+}
+
+section {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    /* padding: 20px; Add padding to avoid tight spacing */
+}
+
+/* section h1, section h2 , section button {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px; 
+} */
+
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+} */
+
+.navbar {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays above content */
+}
+
+#carouselExampleIndicators {
+    width: 100vw;
+    height: calc(100vh - 70px); /* Adjust height based on navbar height */
+    margin-top: 70px; /* Offset to prevent overlap with navbar */
+}
+
+.carousel-inner, .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the full space */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    text-align: center;
+
+    background: rgba(198, 195, 195, 0.207); /* Optional: dark background for readability */
+    padding: 10px 20px; /* Reduces padding */
+    border-radius: 8px; /* Slightly rounded corners */
+    color: white;
+    width: 60%; /* Make the box smaller */
+    max-width: 400px; /* Limits maximum size */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}   
+
+.carousel-caption h1{
+    font-size: 50px;
+}
+
+.carousel-caption p{
+    margin-top: 28px;
+    font-size: 20px;
+}
+
+
+.card1, .card2 {
+    width: 100%; /* Adjust width as needed */
+    max-width: 450px; /* Prevents it from getting too large */
+    color: white;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.card1{
+    background-color:rgb(214, 193, 144);
+
+}
+
+
+.card2{
+    background-color:rgb(0, 0, 0);
+
+}
+
+
+#contact{
+    margin-top: 20px;
+}
+footer {
+    padding: 10px 0; /* Reduce overall footer padding */
+    font-size: 14px; /* Make text smaller */
+}
+
+footer .container {
+    padding: 5px 0; /* Reduce padding inside footer container */
+}
+
+footer form {
+    margin: 0 auto; /* Center form */
+    max-width: 600px; /* Limit form width to keep it compact */
+}
+
+footer .form-outline input {
+    padding: 5px; /* Reduce input padding */
+    font-size: 14px; /* Adjust input text size */
+}
+
+footer .btn {
+    padding: 6px 12px; /* Reduce button size */
+    font-size: 14px; /* Reduce button text size */
+}
+
+footer .text-center {
+    padding: 5px 0; /* Reduce bottom copyright section padding */
+}
