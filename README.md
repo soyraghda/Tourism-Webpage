@@ -4,7 +4,7 @@ A responsive tourism website for **Visit Chile**, built using **HTML, CSS, and B
 
 ## Features
 
-- ** UI** - Modern and responsive design.
+- **UI** - Modern and responsive design.
 - **Carousel** - Highlights Chile’s top attractions.
 - **Destinations Section** - Showcases top travel locations.
 - **Contact Form** - Enables users to reach out.
