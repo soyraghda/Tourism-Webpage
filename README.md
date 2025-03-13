@@ -16,9 +16,10 @@ A responsive tourism website for **Visit Chile**, built using **HTML, CSS, and B
 - **CSS3** - For styling the website.
 - **Bootstrap 5** - For responsiveness and layout.
 
-## Screenshots
+## Demo
 
-![Visit Chile Homepage](#) *(Replace with actual screenshot link)*
+https://github.com/user-attachments/assets/510f06a2-6d8c-4daa-8a38-471d5ea999ab
+
 
 
 
